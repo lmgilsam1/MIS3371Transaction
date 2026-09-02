@@ -1,0 +1,78 @@
+:root {
+  --navy: #0f2744;
+  --navy-mid: #1a3a5c;
+  --gold: #c9a227;
+  --gold-light: #e8c547;
+  --cream: #f7f4ee;
+  --white: #ffffff;
+  --muted: #5c6b7a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Georgia, "Times New Roman", serif;
+  background:
+    radial-gradient(ellipse at top left, rgba(201, 162, 39, 0.18), transparent 50%),
+    linear-gradient(160deg, var(--navy) 0%, var(--navy-mid) 55%, #0b1c30 100%);
+  color: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.card {
+  width: min(720px, 100%);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(232, 197, 71, 0.28);
+  border-radius: 20px;
+  padding: 3.25rem 3rem;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+}
+
+.kicker {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: var(--gold-light);
+  margin-bottom: 1.1rem;
+}
+
+h1 {
+  font-size: clamp(2.1rem, 5vw, 3.4rem);
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 0.85rem;
+}
+
+.rule {
+  width: 72px;
+  height: 2px;
+  background: var(--gold);
+  margin: 0 auto 1.4rem;
+}
+
+p {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: rgba(247, 244, 238, 0.88);
+  max-width: 38rem;
+  margin: 0 auto;
+}
+
+footer {
+  margin-top: 2.4rem;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 0.8rem;
+  color: rgba(247, 244, 238, 0.55);
+}
